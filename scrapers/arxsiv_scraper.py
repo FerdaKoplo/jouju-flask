@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import logging
 
-def scope_arxsiv(query, page=1):
+def scope_arxsiv(query="computer science OR cloud computing", page=1):
     
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'

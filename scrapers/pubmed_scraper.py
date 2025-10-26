@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import logging
 
-def scope_pubmed(query, page=1):
+def scope_pubmed(query="computer science OR cloud computing", page=1):
     
     search_url = f"https://pubmed.ncbi.nlm.nih.gov/?term={query}&page={page}"
     logging.info(f"Scraping PubMed URL: {search_url}")
